@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Виселица</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <header class="header">УВЛЕКАТЕЛЬНАЯ ИГРА "ВИСЕЛИЦА"</header>
+            <div class="container">
+                <canvas class="picture" width="500" height="400">
+
+                </canvas>
+                <div class="word"></div>
+                <input type="text" class="inputLetter" placeholder="ВВЕДИТЕ БУКВУ">
+            </div>
+        </div>
+        <div class="resultBad">
+            <h2>ТЫ ПРОИГРАЛ!<br>ПОПРОБУЙ ЕЩЕ РАЗ!</h2>
+            <button class="repeatGame" onclick="repeatGame()">ЕЩЕ РАЗ</button>
+        </div>
+        <div class="resultGood">
+            <h2>ТЫ ПОБЕДИЛ! ПОЗДРАВЛЯЮ!</h2>
+            <button class="repeatGame" onclick="repeatGame()">ЕЩЕ РАЗ</button>
+        </div>
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Добро пожаловать! Выберите раздел</h2>
+            </div>
+            <div class="modal-body">
+                <button class="modal-btn" onclick="gameLetters(footballers)">ФУТБОЛИСТЫ</button>
+                <button class="modal-btn" onclick="gameLetters(countries)">СТРАНЫ</button>
+                <button class="modal-btn" onclick="gameLetters(cities)">ГОРОДА</button>
+                <button class="modal-btn" onclick="gameLetters(animals)">ЖИВОТНЫЕ</button>
+                <button class="modal-btn" onclick="gameLetters(ufc)">UFC</button>
+                <button class="modal-btn" onclick="gameLetters(actors)">АКТЕРЫ И АКТРИСЫ</button>
+                <button class="modal-btn" onclick="gameLetters(singers)">ПЕВЦЫ И ПЕВИЦЫ</button>
+                <button class="modal-btn" onclick="gameLetters(footballClubs)">ФУТБОЛЬНЫЕ КЛУБЫ</button>
+            </div>
+            <div class="modal-footer">
+                <h3>ЖЕЛАЕМ УДАЧИ!</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
